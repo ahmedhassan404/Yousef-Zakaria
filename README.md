@@ -1,6 +1,7 @@
 # Cipher Website
 
-![Cipher Website Screenshot](#) <!-- Add a screenshot if available -->
+![Cipher Website Screenshot](![image](https://github.com/user-attachments/assets/c5536f2d-6e55-48a5-81f7-e0bb6b0ea602)
+) <!-- Add a screenshot if available -->
 
 A web application that allows users to encrypt and decrypt text using various cipher algorithms, including AES, Caesar, Monoalphabetic, Playfair, and Vigenere ciphers. Built with HTML, CSS, and JavaScript.
 
