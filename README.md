@@ -1,6 +1,6 @@
 # Ecommerce Store API
 
-The Ecommerce Store API is a robust and scalable backend solution for managing e-commerce operations. It provides RESTful endpoints to handle user authentication, product catalog management, and order processing. Built using Node.js, Express.js, and MongoDB, the API is modular, secure, and production-ready.
+The **Ecommerce Store API** is a robust and scalable backend solution for managing e-commerce operations. It provides RESTful endpoints for user authentication, product catalog management, and order processing. Built with **Node.js**, **Express.js**, and **MongoDB**, the API is modular, secure, and production-ready.
 
 ---
 
@@ -51,44 +51,73 @@ This project serves as the backend of an e-commerce platform. It enables the cre
 
 ### Clone the Repository
 
-bash
+```bash
 git clone https://github.com/Abdulrhman-Gawish/ecommerce-store-api.git
 cd ecommerce-store-api
-Install Dependencies
-bash
+```
+
+### Install Dependencies
+
+```bash
 npm install
-Run the Development Server
-bash
+```
+
+### Run the Development Server
+
+```bash
 npm run dev
-The server will start on http://localhost:5000.
+```
 
-Environment Configuration
-Create a .env file in the root directory and define the following variables:
+The server will start on `http://localhost:5000`.
 
-env
+---
+
+## Environment Configuration
+
+Create a `.env` file in the root directory and define the following variables:
+
+```env
 PORT=5000
 MONGODB_URI=mongodb://localhost:27017/ecommerce
 JWT_SECRET=your_secret_key
-API Endpoints
-Authentication
-Method	Route	Description
-POST	/api/auth/register	Register a new user
-POST	/api/auth/login	Login and receive JWT
-Products
-Method	Route	Description
-GET	/api/products	Get all products
-GET	/api/products/:id	Get product by ID
-POST	/api/products	Create new product
-PUT	/api/products/:id	Update product by ID
-DELETE	/api/products/:id	Delete product by ID
-Orders
-Method	Route	Description
-GET	/api/orders	Get all orders
-GET	/api/orders/:id	Get order by ID
-POST	/api/orders	Create a new order
-PUT	/api/orders/:id	Update order status
-DELETE	/api/orders/:id	Cancel/delete an order
-Project Structure
+```
+
+---
+
+## API Endpoints
+
+### Authentication
+
+| Method | Route              | Description           |
+|--------|-------------------|-----------------------|
+| POST   | /api/auth/register| Register a new user   |
+| POST   | /api/auth/login   | Login and receive JWT |
+
+### Products
+
+| Method | Route              | Description         |
+|--------|-------------------|---------------------|
+| GET    | /api/products      | Get all products     |
+| GET    | /api/products/:id  | Get product by ID    |
+| POST   | /api/products      | Create new product   |
+| PUT    | /api/products/:id  | Update product by ID |
+| DELETE | /api/products/:id  | Delete product by ID |
+
+### Orders
+
+| Method | Route              | Description           |
+|--------|-------------------|-----------------------|
+| GET    | /api/orders        | Get all orders        |
+| GET    | /api/orders/:id    | Get order by ID       |
+| POST   | /api/orders        | Create a new order    |
+| PUT    | /api/orders/:id    | Update order status   |
+| DELETE | /api/orders/:id    | Cancel/delete an order|
+
+---
+
+## Project Structure
+
+```
 ecommerce-store-api/
 │
 ├── config/               # Database connection
@@ -101,22 +130,44 @@ ecommerce-store-api/
 ├── server.js             # App entry point
 ├── package.json          # Project metadata
 └── README.md             # Project documentation
-Testing
+```
+
+---
+
+## Testing
+
 To run automated tests (if configured):
 
-bash
+```bash
 npm test
-You may use tools like jest, supertest, or mocha for API testing.
+```
 
-Contributing
-Fork the repository
+You may use tools like **Jest**, **Supertest**, or **Mocha** for API testing.
 
-Create your feature branch: git checkout -b feature/feature-name
+---
 
-Commit your changes: git commit -m 'Add new feature'
+## Contributing
 
-Push to the branch: git push origin feature/feature-name
-
-Submit a pull request
+1. Fork the repository
+2. Create your feature branch:
+   ```bash
+   git checkout -b feature/feature-name
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m 'Add new feature'
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature/feature-name
+   ```
+5. Submit a pull request
 
 Please ensure your code adheres to project standards and passes linting rules.
+
+---
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
